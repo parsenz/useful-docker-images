@@ -1,5 +1,3 @@
 FROM postgres:9.6
-MAINTAINER parsenz
 
-COPY . /
-ENTRYPOINT ["/no-sync-entrypoint.sh"]
+COPY no-sync.sh /docker-entrypoint-initdb.d/
